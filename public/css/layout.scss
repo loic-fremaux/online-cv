@@ -1,0 +1,225 @@
+@use "reset.css";
+@use "fonts.css";
+
+$content-width: 940px;
+
+body {
+    background-color: #f2f2f2;
+}
+
+#content-wrapper {
+    width: $content-width;
+    margin: 20px auto;
+
+    background-color: #fafafa;
+}
+
+header {
+    display: block;
+    padding: 1em;
+
+    background-color: #00adff;
+
+    h1, h2 {
+        margin: 0 0 0 10px;
+        color: #fafafa;
+    }
+
+    h1 {
+        margin-bottom: 0.2em;
+    }
+}
+
+main {
+    display: flex;
+
+    #left-side {
+        flex: 1.25;
+        background-color: #00adff;
+
+        display: flex;
+        flex-direction: column;
+
+        img {
+            width: 50%;
+            height: auto;
+            margin: 0 auto;
+        }
+
+        h3, p, a {
+            color: #fff;
+        }
+
+        h3 {
+            text-align: center;
+            margin-left: 5px;
+            margin-top: 1em;
+            line-height: 0.5;
+        }
+
+        p, a {
+            margin-left: 15px;
+            font-size: 18px;
+        }
+
+        section {
+            margin-bottom: 2em;
+        }
+
+        .group {
+            display: flex;
+            justify-content: space-between;
+
+            margin: 0 10px 0 0;
+        }
+
+        > :first-child {
+            margin-top: 2em;
+        }
+
+        > :nth-child(2) {
+            margin-top: 2em;
+        }
+
+        > :last-child {
+            margin-bottom: 1em;
+        }
+    }
+
+
+    #right-side {
+        flex: 3;
+
+        h3, p, a {
+            color: #00070a;
+        }
+
+        h3 {
+            margin-left: 20px;
+            margin-bottom: 0.5em;
+        }
+
+        .group {
+            display: block;
+
+            margin: 0 0 1.5em 40px;
+
+            h4 {
+                margin-bottom: 5px;
+            }
+
+            p {
+                margin-left: 20px;
+                margin-bottom: 5px;
+
+                .date {
+                    color: #008bcc;
+                    font-weight: 600;
+                }
+
+                strong {
+                    font-weight: 600;
+                }
+            }
+
+            .child {
+                margin-left: 20px;
+            }
+        }
+
+        section {
+            margin-bottom: 3em;
+        }
+
+        > :first-child {
+            margin-top: 1em;
+        }
+    }
+}
+
+#about-me {
+    text-align: justify;
+    margin-right: 15px;
+}
+
+#skills {
+    .group {
+        p {
+            font-weight: 600;
+        }
+
+        .circles {
+            .circle {
+                height: 0.8em;
+                width: 0.8em;
+                background-color: #fafafa;
+                border-radius: 50%;
+                display: inline-block;
+                transform: translateY(0.1em);
+            }
+
+            .off {
+                background-color: #008bcc;
+            }
+        }
+    }
+}
+
+#hobbies {
+    p {
+        font-weight: 600;
+    }
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+
+    p {
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+
+    .group {
+        a {
+            font-size: 16px;
+        }
+    }
+}
+
+#global-skills {
+    .group {
+        display: block;
+
+        margin: 0 0 1.5em 25px;
+
+        h4 {
+            margin-bottom: 5px;
+            color: #008bcc;
+            font-weight: 600;
+        }
+
+        p {
+            margin-left: 20px;
+            margin-bottom: 5px;
+
+            strong {
+                font-weight: 600;
+            }
+        }
+
+        .child {
+            margin-left: 20px;
+        }
+    }
+}
+
+#download-as-pdf {
+    float: right;
+    margin-top: 5px;
+    margin-right: calc((100% - 920px) / 2);
+}
+
+.date {
+    color: #008bcc;
+}

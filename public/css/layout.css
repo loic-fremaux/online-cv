@@ -1,0 +1,382 @@
+/* ----------------------------- */
+/* ==reset */
+/* ----------------------------- */
+/* base font-size corresponds to 10px and is adapted to rem unit */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.4em;
+  /* equiv 14px */
+  line-height: 1;
+  /* adapt to your design */
+}
+
+/* font-sizing for content */
+/* preserve vertical-rythm, thanks to http://soqr.fr/vertical-rhythm/ */
+p {
+  margin: 0.2em 0;
+  line-height: 1.2;
+}
+
+ul,
+ol,
+dl,
+blockquote,
+pre,
+td,
+th,
+label,
+textarea,
+caption,
+details,
+figure,
+hgroup {
+  font-size: 1em;
+  /* equiv 14px */
+  line-height: 1.5;
+  margin: 1em 0 0;
+}
+
+/* soft reset */
+html,
+body,
+textarea,
+figure,
+label {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  padding-left: 2em;
+}
+
+code {
+  line-height: 1em;
+}
+
+table {
+  margin-bottom: 1.5em;
+}
+
+/* avoid top margins on first content element */
+p:first-child,
+ul:first-child,
+ol:first-child,
+dl:first-child,
+blockquote:first-child,
+pre:first-child,
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child,
+h6:first-child {
+  margin-top: 0;
+}
+
+/* avoid margins on nested elements */
+li p,
+li ul,
+li ol {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* HTML5 tags */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+  display: block;
+}
+
+/* max values */
+img, table, td, blockquote, code, pre, textarea, input, video {
+  max-width: 100%;
+}
+
+/* you shall not pass */
+div, textarea, table, td, th, code, pre, samp {
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -o-hyphens: auto;
+  hyphens: auto;
+}
+
+strong {
+  font-weight: inherit;
+}
+
+/* pictures */
+img {
+  width: auto;
+  height: auto;
+  vertical-align: middle;
+}
+
+a img {
+  border: 0;
+}
+
+/* scripts */
+body > script {
+  display: none !important;
+}
+
+/* skip-links */
+.skip-links {
+  position: absolute;
+}
+
+.skip-links a {
+  position: absolute;
+  left: -9999px;
+  padding: 0.5em;
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+}
+
+.skip-links a:focus {
+  position: static;
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/fonts/opensans/mem5YaGs126MiZpBA-UN_r8OUuhp.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/opensans/mem8YaGs126MiZpBA-UFVZ0b.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/fonts/opensans/mem5YaGs126MiZpBA-UNirkOUuhp.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/fonts/opensans/mem5YaGs126MiZpBA-UN8rsOUuhp.woff2") format("woff2");
+}
+h1, h2, h3, h4, p, a, span {
+  font-family: "Open Sans", sans-serif;
+  color: #00070a;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 600;
+  font-style: normal;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+h4 {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+p, a {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/*# sourceMappingURL=fonts.css.map */
+body {
+  background-color: #f2f2f2;
+}
+
+#content-wrapper {
+  width: 940px;
+  margin: 20px auto;
+  background-color: #fafafa;
+}
+
+header {
+  display: block;
+  padding: 1em;
+  background-color: #00adff;
+}
+header h1, header h2 {
+  margin: 0 0 0 10px;
+  color: #fafafa;
+}
+header h1 {
+  margin-bottom: 0.2em;
+}
+
+main {
+  display: flex;
+}
+main #left-side {
+  flex: 1.25;
+  background-color: #00adff;
+  display: flex;
+  flex-direction: column;
+}
+main #left-side img {
+  width: 50%;
+  height: auto;
+  margin: 0 auto;
+}
+main #left-side h3, main #left-side p, main #left-side a {
+  color: #fff;
+}
+main #left-side h3 {
+  text-align: center;
+  margin-left: 5px;
+  margin-top: 1em;
+  line-height: 0.5;
+}
+main #left-side p, main #left-side a {
+  margin-left: 15px;
+  font-size: 18px;
+}
+main #left-side section {
+  margin-bottom: 2em;
+}
+main #left-side .group {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10px 0 0;
+}
+main #left-side > :first-child {
+  margin-top: 2em;
+}
+main #left-side > :nth-child(2) {
+  margin-top: 2em;
+}
+main #left-side > :last-child {
+  margin-bottom: 1em;
+}
+main #right-side {
+  flex: 3;
+}
+main #right-side h3, main #right-side p, main #right-side a {
+  color: #00070a;
+}
+main #right-side h3 {
+  margin-left: 20px;
+  margin-bottom: 0.5em;
+}
+main #right-side .group {
+  display: block;
+  margin: 0 0 1.5em 40px;
+}
+main #right-side .group h4 {
+  margin-bottom: 5px;
+}
+main #right-side .group p {
+  margin-left: 20px;
+  margin-bottom: 5px;
+}
+main #right-side .group p .date {
+  color: #008bcc;
+  font-weight: 600;
+}
+main #right-side .group p strong {
+  font-weight: 600;
+}
+main #right-side .group .child {
+  margin-left: 20px;
+}
+main #right-side section {
+  margin-bottom: 3em;
+}
+main #right-side > :first-child {
+  margin-top: 1em;
+}
+
+#about-me {
+  text-align: justify;
+  margin-right: 15px;
+}
+
+#skills .group p {
+  font-weight: 600;
+}
+#skills .group .circles .circle {
+  height: 0.8em;
+  width: 0.8em;
+  background-color: #fafafa;
+  border-radius: 50%;
+  display: inline-block;
+  transform: translateY(0.1em);
+}
+#skills .group .circles .off {
+  background-color: #008bcc;
+}
+
+#hobbies p {
+  font-weight: 600;
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+}
+#contact p {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+#contact .group a {
+  font-size: 16px;
+}
+
+#global-skills .group {
+  display: block;
+  margin: 0 0 1.5em 25px;
+}
+#global-skills .group h4 {
+  margin-bottom: 5px;
+  color: #008bcc;
+  font-weight: 600;
+}
+#global-skills .group p {
+  margin-left: 20px;
+  margin-bottom: 5px;
+}
+#global-skills .group p strong {
+  font-weight: 600;
+}
+#global-skills .group .child {
+  margin-left: 20px;
+}
+
+#download-as-pdf {
+  float: right;
+  margin-top: 5px;
+  margin-right: calc((100% - 920px) / 2);
+}
+
+.date {
+  color: #008bcc;
+}
+
+/*# sourceMappingURL=layout.css.map */

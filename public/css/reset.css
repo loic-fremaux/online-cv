@@ -1,0 +1,148 @@
+/* ----------------------------- */
+/* ==reset */
+/* ----------------------------- */
+
+/* base font-size corresponds to 10px and is adapted to rem unit */
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.4em; /* equiv 14px */
+    line-height: 1; /* adapt to your design */
+}
+
+/* font-sizing for content */
+/* preserve vertical-rythm, thanks to http://soqr.fr/vertical-rhythm/ */
+
+p {
+    margin: 0.2em 0;
+    line-height: 1.2;
+}
+
+ul,
+ol,
+dl,
+blockquote,
+pre,
+td,
+th,
+label,
+textarea,
+caption,
+details,
+figure,
+hgroup {
+    font-size: 1em; /* equiv 14px */
+    line-height: 1.5;
+    margin: 1em 0 0;
+}
+
+/* soft reset */
+html,
+body,
+textarea,
+figure,
+label {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    padding-left: 2em;
+}
+
+code {
+    line-height: 1em;
+}
+
+table {
+    margin-bottom: 1.5em;
+}
+
+/* avoid top margins on first content element */
+p:first-child,
+ul:first-child,
+ol:first-child,
+dl:first-child,
+blockquote:first-child,
+pre:first-child,
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child,
+h6:first-child {
+    margin-top: 0;
+}
+
+/* avoid margins on nested elements */
+li p,
+li ul,
+li ol {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* HTML5 tags */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+    display: block;
+}
+
+/* max values */
+img, table, td, blockquote, code, pre, textarea, input, video {
+    max-width: 100%;
+}
+
+/* you shall not pass */
+div, textarea, table, td, th, code, pre, samp {
+    word-wrap: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -o-hyphens: auto;
+    hyphens: auto;
+}
+
+strong {
+    font-weight: inherit;
+}
+
+/* pictures */
+img {
+    width: auto;
+    height: auto;
+    vertical-align: middle;
+}
+
+a img {
+    border: 0;
+}
+
+/* scripts */
+body > script {
+    display: none !important;
+}
+
+/* skip-links */
+.skip-links {
+    position: absolute;
+}
+
+.skip-links a {
+    position: absolute;
+    left: -9999px;
+    padding: 0.5em;
+    background: #000;
+    color: #fff;
+    text-decoration: none;
+}
+
+.skip-links a:focus {
+    position: static;
+}
+
+a {
+    text-decoration: none;
+}
