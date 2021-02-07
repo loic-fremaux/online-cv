@@ -220,7 +220,7 @@ body {
 
 header {
   display: block;
-  padding: 1em;
+  padding: 2em;
   background-color: #00adff;
 }
 header h1, header h2 {
@@ -259,7 +259,7 @@ main #left-side p, main #left-side a {
   font-size: 18px;
 }
 main #left-side section {
-  margin-bottom: 2em;
+  margin-bottom: 2.5em;
 }
 main #left-side .group {
   display: flex;
@@ -273,7 +273,7 @@ main #left-side > :nth-child(2) {
   margin-top: 2em;
 }
 main #left-side > :last-child {
-  margin-bottom: 1em;
+  margin-bottom: 3em;
 }
 main #right-side {
   flex: 3;
@@ -307,10 +307,10 @@ main #right-side .group .child {
   margin-left: 20px;
 }
 main #right-side section {
-  margin-bottom: 3em;
+  margin-bottom: 4em;
 }
 main #right-side > :first-child {
-  margin-top: 1em;
+  margin-top: 1.5em;
 }
 
 #about-me {
@@ -318,10 +318,10 @@ main #right-side > :first-child {
   margin-right: 15px;
 }
 
-#skills .group p {
+.skills .group p {
   font-weight: 600;
 }
-#skills .group .circles .circle {
+.skills .group .circles .circle {
   height: 0.8em;
   width: 0.8em;
   background-color: #fafafa;
@@ -329,7 +329,7 @@ main #right-side > :first-child {
   display: inline-block;
   transform: translateY(0.1em);
 }
-#skills .group .circles .off {
+.skills .group .circles .off {
   background-color: #008bcc;
 }
 

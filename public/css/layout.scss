@@ -16,7 +16,7 @@ body {
 
 header {
     display: block;
-    padding: 1em;
+    padding: 2em;
 
     background-color: #00adff;
 
@@ -63,7 +63,7 @@ main {
         }
 
         section {
-            margin-bottom: 2em;
+            margin-bottom: 2.5em;
         }
 
         .group {
@@ -82,7 +82,7 @@ main {
         }
 
         > :last-child {
-            margin-bottom: 1em;
+            margin-bottom: 3em;
         }
     }
 
@@ -128,11 +128,11 @@ main {
         }
 
         section {
-            margin-bottom: 3em;
+            margin-bottom: 4em;
         }
 
         > :first-child {
-            margin-top: 1em;
+            margin-top: 1.5em;
         }
     }
 }
@@ -142,7 +142,7 @@ main {
     margin-right: 15px;
 }
 
-#skills {
+.skills {
     .group {
         p {
             font-weight: 600;
